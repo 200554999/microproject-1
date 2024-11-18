@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Records</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Georgian College</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="students.html" class="active">Student Records</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="students-hero">
+        <h2>Student Records</h2>
+        <p>View the detailed records of students enrolled in our courses.</p>
+    </section>
+
+    <section class="students">
+        <div class="container">
+            <button class="load-btn" onclick="fetchStudentData()">Load Student Data</button>
+            <div id="student-records">
+                <table id="students-table" class="hidden">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Georgian College. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
